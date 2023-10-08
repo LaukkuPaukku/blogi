@@ -1,8 +1,7 @@
-<title>Etusivu</title>
-<h1>Etusivu</h1>
-<p>Sisältö:</p>
-<ul>
-{% for item in items %}
-<li> <a href={{ item }}>{{ item }}</a>
+Viestien määrä: {{ count }}
+<hr>
+{% for message in messages %}
+{{ message.content }}
+<hr>
 {% endfor %}
-</ul>
+<a href="/new">Lähetä viesti</a>
